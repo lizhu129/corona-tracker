@@ -18,7 +18,7 @@
 
     <div class="jumbo-tron jumbo-tron-fluid">
         <div class="container">
-            <h1 id="h1" class="display-4" th:text="${totalCases}"></h1>
+            <h1 class="display-4" th:text="${totalCases}"></h1>
             <p class="lead">Total cases reported as of today</p>
         </div>
     </div>
@@ -37,8 +37,8 @@
                 <tr th:each="LocationStats : ${data}">
                     <td th:text="${LocationStats.state}"></td>
                     <td th:text="${LocationStats.country}"></td>
-                    <td id="n1" th:text="${LocationStats.numOfCases}">0</td>
-                    <td id="n2" th:text="${LocationStats.deltaYday}">0</td>
+                    <td th:text="${LocationStats.numOfCases}">0</td>
+                    <td th:text="${LocationStats.deltaYday}">0</td>
                 </tr>
             </tbody>
         </table>
